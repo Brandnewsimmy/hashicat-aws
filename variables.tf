@@ -5,6 +5,20 @@
 # Terraform code. If you create a variable with no default, the user will be
 # prompted to enter it (or define it via config file or command line flags.)
 
+
+variable "aws_access_key_id" {
+  description = "AWS secret access key"
+  default     = "AKIAUYLLKRP5L5U2OL5J"
+  sensitive   = true
+}
+
+
+variable "aws_secret_access_key" {
+  description = "AWS secret access key"
+  default     = "Bqgfbi2bAsh9RjDOJAAGMFe4fS0wsImH+W6z8J+2"
+  sensitive   = true
+}
+
 variable "prefix" {
   description = "This prefix will be included in the name of most resources."
 }
